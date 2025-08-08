@@ -22,11 +22,16 @@ This project demonstrates an **end-to-end machine learning pipeline**, from fine
 
 ---
 
+
+
 ## 🛠 Tech Stack
 
-- **Backend & ML:** Python, PyTorch, Transformers, Scikit-learn, Scikit-surprise, Pandas, NumPy  
+- **Backend & ML:** Python, PyTorch, Transformers, Scikit-learn (F1, AUC, Accuracy, cosine_similarity), Scikit-surprise(Dataset, Reader, SVD), Pandas, NumPy
+- **Model Fine-Tuning:** Datasets (Hugging Face), AutoTokenizer, AutoModelForSequenceClassification, Trainer,  EarlyStoppingCallback
 - **Frontend:** Streamlit  
-- **NLP Tools:** NLTK
+- **NLP Tools:** NLTK  
+
+
 
 ---
 
@@ -40,11 +45,11 @@ This project demonstrates an **end-to-end machine learning pipeline**, from fine
 Download the GoEmotions dataset from Kaggle:  
 [https://www.kaggle.com/datasets/debarshichanda/goemotions](https://www.kaggle.com/datasets/debarshichanda/goemotions)  
 Extract it to `./data/goemotions/`.  
-Open and run `bertFineTunning.ipynb` end-to-end to fine-tune the model on this dataset.
+Open and run `bertFineTunning.ipynb` end-to-end to fine-tune the model on this dataset and download the fine tunned model to local desktop for inference.
 
 ### **1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/prepStation201/mood-based-music-recommendation-system.git
+
+git clone : https://github.com/PrepStation201/mood-based-music-recommendation-system.git
 
 2️⃣ Create and Activate Virtual Environment
 # Create
@@ -61,13 +66,15 @@ pip install -r requirements.txt
 
 
 4️⃣ Download Spotify dataset from Kaggle
-https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset
+[Spotify Dataset – Kaggle](https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset)
+
 
 5️⃣ Download NLTK Data
 python -m nltk.downloader punkt stopwords
 
 6️⃣ Run the Streamlit App
 streamlit run app.py
+
 
 ## ⚙️ Project Workflow
 
