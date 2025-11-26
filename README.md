@@ -53,7 +53,8 @@ git clone : https://github.com/PrepStation201/mood-based-music-recommendation-sy
 
 2️⃣ Create and Activate Virtual Environment
 # Create
-python -m venv venv
+python -m venv venv and 
+
 run bertFinetunning.ipynb file in your local desktop to fine tune the model
 
 # Activate
